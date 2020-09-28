@@ -1,0 +1,61 @@
+<form
+    id="CSV-form"
+    style="display:flex;flex-direction: row"
+    action="https://www.easyschool.systems/search/" 
+    method="get"
+>
+    <div style="flex:1">
+        <input
+            type="text"
+            id="postcode"
+            name="postcode"
+            placeholder="Enter Postcode"
+            style="height:100%;width:100%"
+
+        />
+    </div>
+    <div>
+        <select
+            class="btn btn-light btn-default dropdown-toggle form-control"
+            name="schooltype"
+            id="schooltype"
+            style="height:100%"
+        >
+            <option value="">School Type</option>
+            <option value="any">Any</option>
+            <option value="government">Government</option>
+            <option value="independent">Independent</option>
+            <option value="catholic">Catholic</option>
+        </select>
+    </div>
+    <div>
+        <select
+            class="btn btn-light btn-default dropdown-toggle form-control"
+            name="schoollevel"
+            id="schoollevel"
+            style="height:100%"
+        >
+            <option value="">School Level</option>
+            <option value="any">Any</option>
+          <option value="primary">Primary</option>
+          <option value="secondary">Secondary</option>
+        </select>
+    </div>
+    <div>
+        <select
+            class="btn btn-light btn-default dropdown-toggle form-control"
+            data-toggle="dropdown"
+            name="sort"
+            id="sort"
+            style="height:100%"
+        >
+            <option value="">Sort</option>
+            <option value="Address_Postcode">Postal Code</option>
+            <option value="Education_Sector">School Type</option>  
+            <option value="School_Type">School Level</option>  
+        </select>
+    </div>
+
+
+    <button type="submit"> Search </button>
+</form> 
